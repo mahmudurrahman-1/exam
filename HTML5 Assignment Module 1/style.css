@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  font-weight: 400;
+  box-sizing: border-box;
+  background-color: rgb(192, 230, 245);
+  max-width: 120rem;
+  padding-top: 2rem;
+  margin: 0 auto;
+}
+.main {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: rgb(241, 241, 241);
+  padding: 2rem 6rem;
+  border-radius: 1rem;
+}
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.myform {
+  font-size: 1.8rem;
+  font-weight: inherit;
+  font-family: inherit;
+  margin: 0 auto;
+}
+
+.container-child {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 1rem;
+  align-items: start;
+}
+.container-child:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+input[type="text"],
+input[type="Email"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  font-size: medium;
+}
+.container-radio,
+.container-checkbox {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  padding: 1.5rem 2rem;
+  font-size: 1.6rem;
+  background-color: rgba(5, 113, 185, 0.836);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+.container-child-8 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
